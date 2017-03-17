@@ -3,70 +3,102 @@ h3 {
 	padding-bottom: 10px;
 	width: 60%;
 	font-family: 'Rancho';
+	font-size: 30px;
 }
 
 h1 {
 	font-family: 'Lobster', cursive;
 	text-align: center;
 	margin: auto;
-	width: 500px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	color: #EAEAEA;
 }
 
-ol {
-	position: relative;
-	top: 600px;
-	background-color: #FFFFC1;
-	padding-top: 13px;
-	padding-bottom: 13px;
-	margin: auto;
-	max-width:550px;
-	
+header {
+	padding-top: 300px;
+	padding-bottom: 300px;
 }
 
-footer {
-	position: relative;
-	top: 800px;
+ol {
+	
+	background-color: rgba(252,244,220,1.00);
+	/*padding-top: 13px;
+	padding-bottom: 13px;*/
+	padding: 13px 13px 13px 30px;
+	margin: auto;
+	max-width:700px;
+	border-radius: 25px;
+}
+
+nav {
 	margin: auto;
 	background-color:#000;
-	padding-bottom:10px;
-	padding-top: 10px;
 	text-align:center;
 	width: 100%;
-	bottom: 0;
-	left: o;
+	top: 0;
 	font-family: 'Lobster', cursive;
+	position: fixed
 }
 
 body {
 	padding:0;
 	margin: 0;
+	background-image: url("Daun Gugur.jpg");
+	background-attachment: fixed;
+	background-size: contain;
+	background-position: top center;
 
 }
 
 .badan {
-	background-color:#FFF;
-		background-image: url(Daun%20Gugur.jpg);
-	background-attachment: fixed;
-	background-size:cover;
-	background-position: center bottom;
+	padding: 20px;
+	background-color: rgba(239,239,239,1.00);
 }
 
-.tombol-bawah {
-	border-radius: 25px;
+.tombolhome {
+	padding: 10px 0;
 	width: 100px;
 	margin:auto;
+	transition-timing-function: ease-out;
+	transition-duration: 0.5s;
 }
 
-a .tombol-bawah:hover {
+a .tombolhome:hover {
 	background-color: #FFF;
 	color: #333;
 }
 
-a .tombol-bawah {
+a .tombolhome {
 	color: #FFF;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+p {
+	font-family: Raleway;
+	font-size: 15px;
+	text-align: justify;
+}
+
+ol li {
+	font-family: 'Rancho';
+	font-size: 25px;
+}
+
+.watermarkbawah {
+	margin: auto;
+	text-align: center;
 }
