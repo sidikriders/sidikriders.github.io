@@ -1,0 +1,72 @@
+h3 {
+	border-bottom: #999 solid 1px;
+	padding-bottom: 10px;
+	width: 60%;
+	font-family: 'Rancho';
+}
+
+h1 {
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	margin: auto;
+	width: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #EAEAEA;
+}
+
+ol {
+	position: relative;
+	top: 600px;
+	background-color: #FFFFC1;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	margin: auto;
+	max-width:550px;
+	
+}
+
+footer {
+	position: relative;
+	top: 800px;
+	margin: auto;
+	background-color:#000;
+	padding-bottom:10px;
+	padding-top: 10px;
+	text-align:center;
+	width: 100%;
+	bottom: 0;
+	left: o;
+	font-family: 'Lobster', cursive;
+}
+
+body {
+	padding:0;
+	margin: 0;
+
+}
+
+.badan {
+	background-color:#FFF;
+		background-image: url(Daun%20Gugur.jpg);
+	background-attachment: fixed;
+	background-size:cover;
+	background-position: center bottom;
+}
+
+.tombol-bawah {
+	border-radius: 25px;
+	width: 100px;
+	margin:auto;
+}
+
+a .tombol-bawah:hover {
+	background-color: #FFF;
+	color: #333;
+}
+
+a .tombol-bawah {
+	color: #FFF;
+}
