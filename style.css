@@ -1,34 +1,160 @@
 body {
+    padding: 0;
 	margin: 0;
-	padding: 0;
-	border: #D32A2D solid 1px;
-}
-
-nav {
-	margin: auto;
-	background-color:#000;
-	text-align:center;
 	width: 100%;
-	top: 0;
-	font-family: 'Lobster', cursive;
-	position: fixed
+	background-color: rgba(229,229,229,1.00)
 }
 
-.tombolhome {
-	padding: 10px 0;
+.isi {
+	max-width: 1079px;
+	margin: 0 auto;
+}
+
+#logokecil {
 	width: 100px;
-	margin:auto;
-	transition-timing-function: ease-out;
+	float: left;
+}
+
+header {
+	border-bottom: double 5px rgba(181,181,181,1.00);
+	width: 100%;
+	background-color: rgba(255,255,255,1.00);
+	font-family: 'Lobster';
+	color: rgba(181,181,181,1.00);
+	padding-bottom: 16px;
+	padding-top: 1px;
+}
+
+#contentheader {
+	width: 55%;
+	margin: auto 22.5%;
+	text-align: center;
+}
+
+#kucing {
+	width: 100%;
+	border-bottom: double 5px rgba(181,181,181,1);
+	margin: 0;
+}
+
+#kucing img {
+	margin: 0;
+}
+
+#profilmini {
+	background-color: rgba(255,255,255,1.00);
+	width: 25%;
+	padding: 30px 15px 15px 15px;
+	float: right;
+	position: relative;
+	top: 18px;
+}
+
+#fotoprofil img {
+	border-radius: 50%;
+	width: 100%;
+}
+
+#fotoprofil {
+	border-bottom: double 3px rgba(181,181,181,1.00);
+	padding: 0 15px 25px 15px;
+}
+
+
+
+#profilmini ul {
+	padding: 0px 0 0 0px;
+	text-align: center;
+}
+
+#profilmini li {
+	display: inline-block;
+	margin: 8.7px;
+	text-align: center;
+}
+
+.yt, .fb, .ig {
 	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
 }
 
-a .tombolhome:hover {
-	background-color: #FFF;
-	color: #333;
+/*#profilmini li img {
+	width: 20%;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+}*/
+
+#profilmini h4 {
+	font-family: 'Hind';
+	text-align: center;
 }
 
-a .tombolhome {
-	color: #FFF;
+#profilmini p {
+	font-family: 'Hind';
+	text-align: center;
+}
+.fb {
+	width: 40px;
+	height: 40px;
+	background-image: url('Logo Facebook BW.png');
+	background-size: contain;
+}
+
+.ig {
+	width: 40px;
+	height: 40px;
+	background-image: url('Logo Instagram BW.png');
+	background-size: contain;
+}
+
+.yt {
+	width: 40px;
+	height: 40px;
+	background-image: url('Logo Youtube BW.png');
+	background-size: contain;
+}
+
+.fb:hover {
+	background-image: url('Logo Facebook.png');
+}
+
+.ig:hover {
+	background-image: url('Logo Instagram.png');
+}
+
+.yt:hover {
+	background-image: url('Logo Youtube.png');
+}
+
+.artikel {
+	background-color: rgba(255,255,255,1.00);
+	padding: 0;
+	text-align: justify;
+	padding-bottom: 10px;
+}
+
+.artikel h3 {
+	border-bottom: solid rgba(181,181,181,1.00) 2px;
+	padding: 10px 5px 15px 0;
+	font-family: 'Hind';
+	width: 65%;
+}
+
+.artikel p {
+	font-family: 'Hind';
+	width: 70%;
+}
+
+.artikel ul {
+	padding-top: 15px;
+}
+
+.artikel li {
+	list-style: none;
+}
+
+img {
+	width: 60%;
 }
 
 a:link {
@@ -47,9 +173,10 @@ a:active {
     text-decoration: none;
 }
 
-h1 {
-	font-family: 'Lobster', cursive;
+footer {
+	width: 100%;
 	text-align: center;
-	margin: auto;
-	color: #D71013;
+	font-family: 'Hind';
+	color:rgba(141,141,141,1.00);
+	margin: 10px 0;
 }
