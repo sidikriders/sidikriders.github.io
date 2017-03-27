@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by anonymous (http://jsbin.com/tibisoyujo/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="Logo Sidik Riders Icon title.png">
+  <title>Cek Bilangan Prima</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+var inputAngka = prompt('Masukkan angka!');
+
+var angka = Number(inputAngka);
+
+var integer = Number.isInteger(angka);
+
+var batas = Math.floor(Math.sqrt(angka));
+
+var count = 0;
+
+var pembagi = [];
+
+
+function check(angka) {
+  if (integer == true) {
+    if (angka > 1) {
+      for (i = 2; i <= batas; i++) {
+        if (angka % i === 0) {
+          count++;
+          pembagi.push(i);
+        } else {}
+      }
+      if (count === 0) {
+        //output bilangan prima
+        console.log('Selamat!! Angka ' + angka + ' adalah bilangan prima!');
+        document.write(' Selamat!! Angka ' + angka + ' adalah bilangan prima! <br>');
+        document.write(' Whooo!! <br>');
+        document.write(' <img src="https://media.giphy.com/media/x4gQEhf736ZMc/giphy.gif"> <br>');
+      } else if (count > 0) {
+        //output bukan bilangan prima
+        console.log('Angka ' + angka + ' bukan bilangan prima');
+        console.log('Karena ' + angka + ' habis dibagi ' + pembagi);
+        document.write('Angka ' + angka + ' bukan bilangan prima! <br>');
+        document.write('Karena angka ' + angka + ' habis dibagi ' + pembagi + ' <br>');
+        document.write(' <img src="https://media.giphy.com/media/MdXXZh65YfC7e/giphy.gif"> <br>');
+      }
+    } else {
+      console.log('Hmm sepertinya data yang kamu masukkan bukan bilangan yang lebih besar dari 1, silahkan refresh halaman ini dan coba lagi.');
+      document.write('Hmm sepertinya data yang kamu masukkan bukan bilangan yang lebih besar dari 1.<br>Silahkan refresh halaman ini dan coba lagi. <br>');
+      document.write(' <img src="https://media.giphy.com/media/yj5oYHjoIwv28/giphy.gif">');
+    }
+    
+  } else if (integer == false) {
+    console.log('Hmm sepertinya data yang kamu masukkan bukan bilangan asli, silahkan refresh halaman ini dan coba lagi.');
+    document.write('Hmm sepertinya data yang kamu masukkan bukan bilangan asli.<br>Silahkan refresh halaman ini dan coba lagi. <br>');
+    document.write(' <img src="http://www.reactiongifs.com/wp-content/uploads/2013/04/question-mark.gif">');
+  }
+}
+
+check(angka);
+
+</script>
+</body>
+</html>
