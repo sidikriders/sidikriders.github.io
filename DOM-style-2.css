@@ -1,0 +1,74 @@
+body {
+	background-color: rgba(177,235,235,1.00);
+}
+
+#body {
+	width: 100%;
+}
+
+#kotak {
+	background-color: rgba(35,219,90,1.00);
+	width: 50vh;
+	margin: 0px auto;
+	text-align: center;
+	height: 50vh;
+	border-radius: 25px;
+	border: rgba(0,0,0,1.00) solid 5px;
+}
+
+#tulisan {
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+	font-size: 5vh;
+	color: rgba(255,255,255,1.00);
+	margin: 40% auto;
+}
+
+#mulai-permainan {
+	background-color: rgba(35,219,90,1.00);
+	width: 50vh;
+	margin: 0px auto;
+	text-align: center;
+	height: 50vh;
+	border-radius: 25px;
+	border: rgba(0,0,0,1.00) solid 5px;
+}
+
+#tulisanMain {
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+	font-size: 3vh;
+	color: rgba(255,255,255,1.00);
+	margin: 40% auto;
+}
+
+h1 {
+	font-family: 'Lobster', cursive;  	
+	color: rgba(151,151,151,1.00);
+	margin: 25vh auto 25px auto;
+	width: 100%;
+	text-align: center;
+	font-size: 5vh;
+}
+
+#kotak-baru {
+	background-color: rgba(34,44,219,1.00);
+	width: 50vh;
+	margin: 0px auto;
+	text-align: center;
+	height: 50vh;
+	border-radius: 25px;
+	border: rgba(0,0,0,1.00) solid 5px;
+}
+
+#hasil {
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+	font-size: 3vh;
+	color: rgba(255,255,255,1.00);
+	margin: 40% auto;
+}
+
+#rest {
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+	font-size: 3vh;
+	color: rgba(255,255,255,1.00);
+	margin: 40% auto;
+}
