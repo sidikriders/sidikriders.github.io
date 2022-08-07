@@ -1,0 +1,104 @@
+h3 {
+	border-bottom: #999 solid 1px;
+	padding-bottom: 10px;
+	width: 60%;
+	font-family: 'Rancho';
+	font-size: 30px;
+}
+
+h1 {
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	margin: auto;
+	color: #EAEAEA;
+}
+
+header {
+	padding-top: 300px;
+	padding-bottom: 300px;
+}
+
+ol {
+	
+	background-color: rgba(252,244,220,1.00);
+	/*padding-top: 13px;
+	padding-bottom: 13px;*/
+	padding: 13px 13px 13px 30px;
+	margin: auto;
+	max-width:700px;
+	border-radius: 25px;
+}
+
+nav {
+	margin: auto;
+	background-color:#000;
+	text-align:center;
+	width: 100%;
+	top: 0;
+	font-family: 'Lobster', cursive;
+	position: fixed
+}
+
+body {
+	padding:0;
+	margin: 0;
+	background-image: url("Daun Gugur.jpg");
+	background-attachment: fixed;
+	background-size: contain;
+	background-position: top center;
+
+}
+
+.badan {
+	padding: 20px;
+	background-color: rgba(239,239,239,1.00);
+}
+
+.tombolhome {
+	padding: 10px 0;
+	width: 100px;
+	margin:auto;
+	transition-timing-function: ease-out;
+	transition-duration: 0.5s;
+}
+
+a .tombolhome:hover {
+	background-color: #FFF;
+	color: #333;
+}
+
+a .tombolhome {
+	color: #FFF;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+p {
+	font-family: Raleway;
+	font-size: 15px;
+	text-align: justify;
+}
+
+ol li {
+	font-family: 'Rancho';
+	font-size: 25px;
+}
+
+.watermarkbawah {
+	margin: auto;
+	text-align: center;
+}

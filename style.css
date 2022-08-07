@@ -1,189 +1,576 @@
+html {
+  height: 100%;
+}
+
 body {
-    padding: 0;
-	margin: 0;
-	width: 100%;
-	background-color: rgba(208,208,208,1.00)
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.isi {
-	max-width: 1079px;
-	margin: 0 auto;
+::-webkit-scrollbar {
+  width: 0px;
 }
 
-#logokecil {
-	width: 100px;
-	float: left;
+p {
+  margin: 0;
 }
 
-header {
-	border-bottom: double 5px rgba(208,208,208,1.00);
-	background-color: rgba(255,255,255,1.00);
-	font-family: 'Lobster';
-	color: rgba(181,181,181,1.00);
-	padding-bottom: 16px;
-	padding-top: 30px;
+a {
+  text-decoration: none;
 }
 
-#contentheader {
-	width: 55%;
-	margin: auto 22.5%;
-	text-align: center;
+#side-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  width: 300px;
+  padding-top: 40px;
+  background: #086cee;
+  background: -moz-linear-gradient(107deg, #086cee, #06b0ec);
+  background: -webkit-linear-gradient(107deg, #086cee, #06b0ec);
+  background: linear-gradient(107deg, #086cee, #06b0ec);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#086cee', endColorstr='#06b0ec',GradientType=1 );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: left .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-#kucing {
-	width: 100%;
-	border-bottom: double 5px rgba(208,208,208,1);
-	margin-bottom: -7px;
+#side-menu .profile-pic {
+  width: 166px;
+  height: 166px;
+  border-radius: 50%;
+  border: solid 8px #06b0ec;
+  overflow: hidden;
 }
 
-#kucing img {
-	margin: 0;
+.profile-pic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0px -21px;
 }
 
-#profilmini {
-	background-color: rgba(255,255,255,1.00);
-	width: 25%;
-	padding: 60px 15px 15px 15px;
-	float: right;
-	position: relative;
-	top: 2px;
+#side-menu > .name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0 5px;
+  color: white;
 }
 
-#fotoprofil img {
-	border-radius: 50%;
-	width: 100%;
+#side-menu .position {
+  color: white;
 }
 
-#fotoprofil {
-	border-bottom: double 3px rgba(181,181,181,1.00);
-	padding: 0 15px 25px 15px;
+#side-menu .list-menu {
+  width: 100%;
+  margin-top: 25px;
 }
 
-#profilmini {
-	margin-top: 0;
+#side-menu .list-menu .list {
+  padding: 15px 0 15px 15px;
+  color: white;
+  font-weight: 600;
+  transition: all 1s ease;
+  background: #075bc900;
 }
 
-#profilmini ul {
-	padding: 0px 0 0 0px;
-	text-align: center;
+#side-menu .list-menu .list.active,
+#side-menu .list-menu .list:hover {
+  background: #075bc9;
+  border-left: solid 4px white;
+  cursor: pointer;
+  transition: all .3s ease;
 }
 
-#profilmini li {
-	display: inline-block;
-	margin: 8.7px;
-	text-align: center;
+#main-content {
+  padding-left: 300px;
 }
 
-.yt, .fb, .ig {
-	transition-duration: 0.5s;
-	transition-timing-function: ease-in-out;
+#main-content #main-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: darkblue;
+  padding-bottom: 150px;
+  height: calc(100vh - 150px);
 }
 
-/*#profilmini li img {
-	width: 20%;
-	transition-duration: 1s;
-	transition-timing-function: ease-out;
-}*/
-
-#profilmini h4 {
-	font-family: 'Hind';
-	text-align: center;
+#main-content #main-banner .typer {
+  width: 100%;
+  z-index: 1;
 }
 
-#profilmini p {
-	font-family: 'Hind';
-	text-align: center;
-}
-.fb {
-	width: 40px;
-	height: 40px;
-	background-image: url('Logo Facebook BW.png');
-	background-size: contain;
+#main-content #main-banner .typer .hello {
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
 }
 
-.ig {
-	width: 40px;
-	height: 40px;
-	background-image: url('Logo Instagram BW.png');
-	background-size: contain;
+#main-content #main-banner .typer .type-content {
+  color: white;
+  font-size: 45px;
+  margin: 20px auto;
+  font-weight: 700;
+  padding: 0 15px;
+  width: fit-content;
+  position: relative;
 }
 
-.yt {
-	width: 40px;
-	height: 40px;
-	background-image: url('Logo Youtube BW.png');
-	background-size: contain;
+#main-content #main-banner .typer .type-content span {
+  border-right: solid 4px white;
+  padding-right: 15px;
 }
 
-.fb:hover {
-	background-image: url('Logo Facebook.png');
+#main-banner .quick-infos {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 150px;
+  width: 100%;
+  background: #086cee;
+  display: flex;
 }
 
-.ig:hover {
-	background-image: url('Logo Instagram.png');
+#main-banner .quick-infos .info {
+  width: 25%;
+  margin: 15px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
 }
 
-.yt:hover {
-	background-image: url('Logo Youtube.png');
+#main-banner .quick-infos .info p {
+  font-weight: 500;
 }
 
-.artikel {
-	background-color: rgba(255,255,255,1.00);
-	padding: 0;
-	text-align: justify;
-	padding-bottom: 10px;
+.quick-infos .info img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  margin-bottom: 15px;
 }
 
-.artikel h3 {
-	border-bottom: solid rgba(181,181,181,1.00) 2px;
-	padding: 10px 5px 15px 0;
-	font-family: 'Hind';
-	width: 65%;
+#main-banner .video {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 150px);
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
 }
 
-.artikel p {
-	font-family: 'Hind';
-	width: 65%;
-	text-indent: 10px;
+#main-banner .video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.artikel ul {
-	margin-top: 0px;
-	padding-top: 15px;
+#main-banner .video .blue-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #086cee9c;
 }
 
-.artikel li {
-	list-style: none;
+#about {
+  padding: 60px 15px 30px;
+  max-width: 1110px;
+  margin: auto;
+  position: relative;
+  display: flex;
 }
 
-img {
-	width: 60%;
+#about .about-photo {
+  width: 40%;
+  position: relative;
 }
 
-a:link {
-    text-decoration: none;
-	color: #000000;
+#about .about-photo img {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-a:visited {
-	text-decoration: none;
-	color: #000000;
+#about .about-sidik {
+  padding: 0 15px;
+  width: 60%;
 }
 
-a:hover {
-    text-decoration: none;
-	color: #004fce;
+#about .about-sidik > p.hello {
+  color: #075bc9;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-a:active {
-    text-decoration: none;
-	color: #000000;
+#about .about-sidik h2,
+#about .about-sidik h5 {
+  margin: 0;
+}
+
+#about .about-sidik > p:not(.hello) {
+  margin: 30px 0;
+  text-align: justify;
+  text-indent: 30px;
+}
+
+#about .about-sidik .overall-skill {
+  position: relative;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill .title {
+  font-weight: 600;
+  color: #075bc9;
+}
+
+.skill .skill-meter {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background-color: #e3e3e3;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.skill .skill-meter .gauge {
+  height: 100%;
+  background: linear-gradient(107deg, #075bc9, #92baef);
+  width: 0;
+  transition: width 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  /* border-radius: 8px; */
+}
+
+.skill .skill-meter .thumb {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  font-size: 12px;
+  left: 0;
+  background-color: #5299fc;
+  color: white;
+  font-weight: 600;
+  padding: 5px;
+  transition: left 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.skill .skill-meter .thumb::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: calc(100% - 2px);
+  height: 8px;
+  width: 16px;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  background-color: #5299fc;
+}
+
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.social-media .sosmed {
+  background-color: red;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: white;
+}
+
+.social-media .sosmed:nth-child(1) {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.social-media .sosmed:nth-child(2) {
+  background-color: #3b5998;
+}
+
+.social-media .sosmed:nth-child(3) {
+  background-color: #1da1f2;
+}
+
+.social-media .sosmed:nth-child(5) {
+  background-color: #0077b5;
+}
+
+.social-media .sosmed:nth-child(6) {
+  background-color: #333;
+}
+
+.social-media .sosmed:nth-child(7) {
+  background-color: #bb432c;
+}
+
+#education {
+  max-width: 1110px;
+  padding: 0 15px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#education > h2 {
+  width: 100%;
+}
+
+#education > *:not(h2) {
+  padding-left: 30px;
+  border-left: solid 7px #ccc;
+  padding-bottom: 30px;
+  max-width: calc(50% - 67px);
+  margin-left: 15px;
+}
+
+#education > * > .exp:last-child {
+  margin-bottom: 0;
+}
+
+#education > * > h3 {
+  margin-top: 0;
+}
+
+#education > * > h3 i {
+  margin-right: 10px;
+  color: #06b0ec;
+}
+
+#education > * > .exp {
+  padding: 15px 15px 30px;
+  background-color: #e3e3e3;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#education > * > .exp .title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#education > * > .exp .subtitle {
+  font-weight: 600;
+  color: #06b0ec;
+}
+
+#education > * > .exp a .subtitle:hover {
+  color: #267e9c;
+}
+
+#education > * > .exp .desc {
+  margin-top: 10px;
+}
+
+#education > * > .exp .desc p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+#education > * > .exp .dot-mark {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #075bc9;
+  border-radius: 50%;
+  left: -51px;
+  top: 8px;
+  border: double 8px white;
 }
 
 footer {
-	width: 100%;
-	text-align: center;
-	font-family: 'Hind';
-	color:rgba(244,244,244,1.00);
-	margin: 50px 0 10px;
+  padding: 15px;
+  padding-left: 300px;
+  text-align: center;
+  background: #ccc;
+}
+
+#mobile-burger {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #075bc9;
+  color: white;
+  font-size: 26px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+#portofolio {
+  padding: 0 15px;
+  background-color: #065ea7;
+  margin: 30px 0 0;
+}
+
+#portofolio .content {
+  max-width: 1110px;
+  padding: 30px 0;
+  margin: auto;
+}
+
+#portofolio .content h2 {
+  margin: 0 0 5px;
+  color: #FFF;
+}
+
+#portofolio .project {
+  margin: 30px 0;
+}
+
+#portofolio .project .title {
+  margin: 0 0 5px;
+  display: flex;
+  align-items: center;
+}
+
+#portofolio .project .title h3 {
+  color: #fff;
+  margin: 0;
+}
+
+#portofolio .project .arrow {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  margin-right: 10px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%, 25% 50%);
+}
+
+#portofolio .project > p {
+  color: #fff;
+}
+
+#portofolio .content p.subtitle {
+  color: #fff;
+  font-style: italic;
+}
+
+#portofolio .project .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 15px);
+}
+
+.project .gallery .img {
+  margin: 15px 15px 15px 0;
+  max-width: 266px;
+}
+
+.project .gallery .img img {
+  width: 266px;
+}
+
+.project .gallery .img p {
+  color: #fff;
+  border-left: solid 2px #fff;
+  padding-left: 10px;
+  margin: 10px 0 0;
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 1060px) and (min-width: 740px) {
+  #education > *:not(h2) {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 644px) {
+  #education > *:not(h2) {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1062px) {
+  .quick-infos .info img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #main-banner .quick-infos .info p,
+  #main-banner .quick-infos .info span {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 951px) {
+  #main-banner .quick-infos {
+    flex-wrap: wrap;
+    height: fit-content
+  }
+
+  #main-banner .quick-infos .info {
+    width: calc(50% - 30px);
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  #mobile-burger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  #side-menu {
+    left: -100vw;
+    z-index: 2;
+    width: 100vw;
+  }
+
+  #main-content,
+  footer {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 624px) {
+  #main-content #main-banner .typer .hello {
+    font-size: 16px;
+  }
+  #main-content #main-banner .typer .type-content {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #about {
+    flex-wrap: wrap;
+  }
+
+  #about .about-photo {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 15px;
+  }
+
+  #about .about-photo img {
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  #about .about-sidik {
+    padding: 0;
+    width: 100%;
+  }
 }
