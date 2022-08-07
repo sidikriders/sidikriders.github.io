@@ -44,35 +44,6 @@ function animateTitle() {
   pasteWord(wordOrders[0], 0)
 }
 
-function animateSkill() {
-  var checkpoint = $('.overall-skill .skill').offset().top + $('.overall-skill .skill').height() - window.innerHeight + 15
-  if ($(window).scrollTop() >= checkpoint) {
-    doAnimation()
-  }
-  $(window).scroll(function (e) {
-    if ($(this).scrollTop() >= checkpoint) {
-      doAnimation()
-    }
-  })
-
-  function doAnimation() {
-    if (!window.skillAnimated) {
-      var skills = $('.skill .skill-meter')
-      skills.each((idx, el) => {
-        var skill = $(el)
-        var score = Number(skill.attr('skill'))
-        var gauge = skill.find('.gauge')
-        var thumb = skill.find('.thumb')
-        thumb.text(score + '%')
-        skill.find('.gauge').css('width', score + '%')
-        thumb.css('left', 'calc( ' + score + '% - 15px)')
-      })
-      window.skillAnimated = true
-    }
-  }
-}
-
-
 function initSideTab() {
   var target = [
     $('#main-banner').offset().top,
@@ -125,6 +96,5 @@ function initLazy () {
 }
 
 animateTitle()
-animateSkill()
 initSideTab()
 initLazy()
