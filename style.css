@@ -220,6 +220,7 @@ a {
   margin: 30px 0;
   text-align: justify;
   text-indent: 30px;
+  line-height: 1.5em;
 }
 
 #about .about-sidik .overall-skill {
@@ -342,6 +343,7 @@ a {
 #education > * > .exp .desc p {
   margin-top: 10px;
   text-align: justify;
+  line-height: 1.5em;
 }
 
 #education > * > .exp .dot-mark {
