@@ -208,4 +208,4 @@ _e.version="2.29.4";M9(Tt);_e.fn=xe;_e.min=x7;_e.max=C7;_e.now=w7;_e.utc=ra;_e.u
       margin-top: 21.99px;
     }
   }
-`;vv.createRoot(document.getElementById("root")).render(w(ct.StrictMode,{children:w(rT,{children:w(_T,{adapter:AT,children:w(nT,{children:w(Ab,{path:"/",element:w(VG,{})})})})})}))});export default HG();
+`;vv.createRoot(document.getElementById("root")).render(w(ct.StrictMode,{children:w(rT,{basename:"/basic-user-list",children:w(_T,{adapter:AT,children:w(nT,{children:w(Ab,{path:"/",element:w(VG,{})})})})})}))});export default HG();
